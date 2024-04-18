@@ -1,6 +1,6 @@
 print("hello world!\nIam Sushil")
 
-# How to write comment is py
+# How to write comment in py
 # Another way to comment out for multiple code or statement
 '''print("statement 1")
 print("statement 2")'''
