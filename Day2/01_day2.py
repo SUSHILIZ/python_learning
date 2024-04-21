@@ -47,18 +47,14 @@
 
 # a=int(input("a:"))
 # b=int(input("b:"))
-
-# if(a>=b):
-#     print("True")      #Identation is important and after : 4 spaces is provided.
-# else:
-#     print("False")
+# print(a>=b)
 
 # Conditional Statement
 
 #---------------- if-elif-else -------------------
 
 # if(condition):
-#     statement1
+#     statement1   #Identation is important and after : 4 spaces is provided.
 # elif(condition):
 #     statement2
 # else:
