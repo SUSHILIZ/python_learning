@@ -1,0 +1,21 @@
+In First day, I learned about variable, identifier, Datatypes, Tokens, Punctuators, Expression Execution and how to comment.
+variable is an identifier.
+Tokens are identifier, keywords, Punctuators,literals and operators.
+
+# Numeric literals
+num1 = 42
+num2 = 3.14
+
+# String literals
+message = 'Hello, world!'
+name = "Alice"
+
+# Boolean literals
+is_python_fun = True
+is_java_fun = False
+
+# None literal
+empty_value = None
+
+#operators
++, -, *, /, //, %, **, =, +=, -=, *=, /=, //=, %=, **=, etc.

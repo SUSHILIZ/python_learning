@@ -1,0 +1,7 @@
+I learned about input() for string, int and float.
+Try to write some program to take input and print something.
+
+-----Conditional Statements-------
+if-elif-else
+single line if/ Ternary operator
+clever if / Ternary operator
