@@ -135,8 +135,7 @@ def check_for_line():
             if(word in data):
                 print(line_no)
                 return
-            else:
-                line_no+=1
+            line_no+=1
 
     return print(-1)
 check_for_line()
