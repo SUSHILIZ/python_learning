@@ -126,3 +126,104 @@ car1.message()
 
         #Derived 
         #  (child)
+
+class A:
+    varA="welcome to class  A"
+
+class B:
+    varB="Welcome to class B"
+
+class C(A,B):
+    varC="Welcome to class C"
+
+c1=C()
+print(c1.varA)
+print(c1.varB)
+print(c1.varC)
+
+
+#Super method
+#used to access methods of the parent class.
+
+class Bike:
+    def __init__(self,type):
+        self.type=type
+    def Stop(self):
+      print("Bike stopped...")
+
+class Honda(Bike):
+
+    def __init__(self,name,type):
+       self.name=name
+       super().__init__(type)
+
+    def stop(self):
+       super().Stop()
+
+honda=Honda("Aventon","electric")
+print(honda.type)
+honda.stop()
+
+
+#-----------class method-----------
+
+ # A class method is bound to the class and receives the class as an implicit first argument.
+ # Note:::: static method can't access or modify class state and generally for utility.
+
+ #static method(@staticmethod is only used if there is no class attribute and instance(object) attribute)
+
+
+class Person:
+    name="sushil"
+    @classmethod  #decorator  #it can  change class attrubute
+    def changeName(cls,name):
+        cls.name=name
+p1=Person()
+p1.changeName("hero")
+print(Person.name)
+print(p1.name)
+
+
+#There are three types of methods inside the classes
+# static methods
+# class methods(cls)
+# instance methods(self)
+
+
+#property decorator
+#    It helps to convert method into attribute
+
+class Student:
+    def __init__(self,math,phy,chem):
+        self.math=math
+        self.phy=phy
+        self.chem=chem
+    @property
+    def percentage(self):
+        return str((self.math+self.phy+self.chem)/3)+"%"
+
+s1=Student(98,97,99)
+print(s1.percentage)
+s1.phy=83
+print(s1.phy)
+print(s1.percentage)
+
+
+#explanation
+# This also give same result but above is recommended
+class Student:
+    def __init__(self,math,phy,chem):
+        self.math=math
+        self.phy=phy
+        self.chem=chem
+    def channgepercentage(self):
+        return str((self.math+self.phy+self.chem)/3)+"%"
+s1=Student(98,97,99)
+print(s1.channgepercentage())
+s1.phy=83
+print(s1.phy)
+print(s1.channgepercentage())
+
+
+#----We have studied @staticmethod, @classmethod, @property decorators-------
+
